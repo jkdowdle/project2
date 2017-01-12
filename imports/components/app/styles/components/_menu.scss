@@ -1,0 +1,71 @@
+section.menu {
+	@extend .section;
+	@extend .main;
+
+	.container {
+		border: 1px solid #a0a6a9;
+	}
+
+	hr {
+		margin: 0.5rem auto;
+		border: 0;
+		border-top: 2px solid rgba(55, 58, 60, 0.1);
+		@media(min-width: $grid-breakpoints-md) {
+			width: 80%;
+		}
+	}
+
+
+
+	.menu-list { 
+		@extend .menu-section;
+		.menu-item{ 
+			min-width: 12%;
+			padding: 0.2rem 0.4rem;
+			display: inline-block;
+		}
+	}
+
+	.menu-pizzas, .menu-specialty-pizzas,
+	.menu-bread-sticks, .menu-calzones,
+	.menu-salads, .menu-drinks,
+	.menu-buffet, .menu-saladbar {
+		@extend .menu-section;
+		@extend .menu-table;
+	}
+
+	.menu-bread-sticks, .menu-calzones, .menu-drinks {
+		.no-bt {
+			border-top: 0;
+		}
+	}
+
+	.menu-drinks {
+		@media (min-width: $grid-breakpoints-md) {
+			float: right;
+		}
+	}
+
+	.table { 
+		td {
+			text-align: right;
+		}
+		@media (min-width: $grid-breakpoints-md){
+			td {
+				text-align: left;
+			}
+		}	
+	}
+	.menu-table {
+		thead th {
+			border-top: 0;
+		}
+
+		tr {
+			text-align: left;
+		}
+	}
+
+}
+
+

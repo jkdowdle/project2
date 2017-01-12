@@ -1,0 +1,20 @@
+.section {
+	padding: 2rem;
+
+}
+
+.main {
+	.container {
+		background-color: #fff;
+		border: 1px solid #c9cfd2;
+		border-radius: 0.12rem;
+	}
+}
+
+section.bg-light {
+	background: $gray-lighter;
+}
+
+section.bg-dark {
+	background:$gray-light;
+}

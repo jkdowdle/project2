@@ -1,15 +1,17 @@
-import angular from 'angular';
+import angular       from 'angular';
 import angularMeteor from 'angular-meteor';
-import uiRouter from 'angular-ui-router';
+import uiRouter      from 'angular-ui-router';
 
-import template from './app.component.html';
+//import bootstrap from './styles/bootstrap/bootstrap.scss';
+//import styles    from './styles/main.scss';
+import template  from './app.component.html';
 
 import header from '../layout/header.component';
 import footer from '../layout/footer.component';
-import home from '../home/home.component';
-import menu from '../menu/menu.component';
+import home   from '../home/home.component';
+import menu   from '../menu/menu.component';
 
-import special from '../../directives/special.directive';
+import special        from '../../directives/special.directive';
 import menuDirectives from '../../directives/menu/menu-directives.module';
 
 class AppCtrl {

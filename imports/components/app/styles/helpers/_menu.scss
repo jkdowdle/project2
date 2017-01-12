@@ -1,0 +1,13 @@
+.menu-section {
+	margin: 0 auto;
+	padding: 0;
+	width: 100%;
+	text-align: center;
+
+	@media (min-width: $grid-breakpoints-sm) {
+		width: 95%;
+	}
+	@media (min-width: $grid-breakpoints-md) {
+		width: 75%;
+	}
+}

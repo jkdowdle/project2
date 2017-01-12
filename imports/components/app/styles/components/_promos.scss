@@ -1,0 +1,21 @@
+section.promo {
+  p, h2, h4 {
+    color:  #fff;
+    margin: 0;
+  }
+  hr.divide {
+  	width: 100%;
+  	margin: 1rem auto;
+  	@media (min-width: $grid-breakpoints-md) {
+  		width: 45%;
+  	}
+  }
+}
+
+section.promo.teal {
+  background: $promo-color-teal!important;
+}
+
+section.promo.maroon {
+  background: $promo-color-maroon!important;
+}

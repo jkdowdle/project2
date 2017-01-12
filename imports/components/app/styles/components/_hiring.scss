@@ -1,0 +1,16 @@
+section.hiring {
+	@extend .section;
+	@extend .main;
+	.container {
+		border: 1px solid #a0a6a9;
+		div.position {
+			margin-top: 0.5rem;
+			p {
+				margin-bottom: 0.25rem;
+			}
+			h5 {
+				margin: 0.4rem 0;
+			}
+		}
+	}
+}

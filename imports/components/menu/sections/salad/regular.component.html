@@ -1,0 +1,54 @@
+<hr>
+
+<div class="salads py-1">
+  <p class="lead text-xs-center"><em>Salads</em></p>
+  <h5 class="text-xs-center mb-1">Basic or Custom</h5>
+
+  <p class="text-xs-center">Dressings</p>
+
+  <ul class="menu-list">
+    <lm-menu-list list-data="$ctrl.dressing"></lm-menu-list>
+  </ul>
+
+  <table class="table menu-salads hidden-xs-down">
+    <thead>
+      <tr>
+        <th></th>
+        <th>Basic</th>
+        <th>Custom</th>
+        <th></th>
+        <th>Basic</th>
+        <th>Custom</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <th scope="row" class="text-xs-right text-capitalize">{{ $ctrl.salad.sm.name }}</th>
+        <td>{{ $ctrl.salad.sm.basic | currency }}</td>
+        <td>{{ $ctrl.salad.sm.custom | currency }}</td>
+        <th class="text-xs-right text-capitalize">{{ $ctrl.salad.lg.name }}</th>
+        <td>{{ $ctrl.salad.lg.basic | currency }}</td>
+        <td>{{ $ctrl.salad.lg.custom | currency }}</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <table class="table menu-salads hidden-sm-up">
+    <thead>
+      <tr>
+        <th class="text-xs-center">Size</th>
+        <th class="text-xs-center">Range</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <th scope="row" class="text-xs-center">Small</th>
+        <td class="text-xs-center">{{ $ctrl.salad.sm.basic | currency }} - {{ $ctrl.salad.sm.custom | currency }}</td>
+      </tr>
+      <tr>
+        <th scope="row" class="text-xs-center">Large</th>
+        <td class="text-xs-center">{{ $ctrl.salad.lg.basic | currency }} - {{ $ctrl.salad.lg.custom | currency }}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>

@@ -1,0 +1,21 @@
+section.locations {
+	@extend .section;
+	@extend .main;
+	table {
+		width: 100%;
+	}
+	.schedule-container {
+		.second-schedule {
+			margin-top: 1rem!important;
+			@media (min-width: $grid-breakpoints-md) {
+				margin-top: 0rem!important;
+			}
+		}
+		padding-left: 1.1rem;
+		padding-right: 1.1rem;
+		@media (min-width: $grid-breakpoints-md) {
+			padding-left: 2rem;
+			padding-right: 2rem;
+		}
+	}
+}

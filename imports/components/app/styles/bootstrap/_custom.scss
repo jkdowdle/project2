@@ -1,0 +1,39 @@
+// Bootstrap overrides
+//
+// Copy variables from `_variables.scss` to this file to override default values
+// without modifying source files.
+
+// Colors
+//
+// Grayscale and brand colors for use across Bootstrap.
+
+$brand-success:             #00795B !default;
+$brand-warning:             #A60032 !default;
+
+// Buttons
+//
+// For each of Bootstrap's buttons, define text, background and border color.
+
+// Allows for customizing button radius independently from global border radius
+$btn-border-radius:              0.08rem !default;
+$btn-border-radius-lg:           0.12rem !default;
+$btn-border-radius-sm:           0.04rem !default;
+
+// Enable Flex Box
+
+$enable-flex:               true !default;
+
+// Navbar
+
+$navbar-border-radius:              0rem !default;
+
+// Cards
+
+//$card-spacer-x:            1.25rem !default;
+$card-spacer-y:            0rem !default;
+
+// Body
+//
+// Settings for the `<body>` element.
+
+$body-bg:    #f7f7f9 !default;

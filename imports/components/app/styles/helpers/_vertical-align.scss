@@ -1,0 +1,15 @@
+.aligner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+	.aligner-item {
+	  max-width: 100%;
+	}
+	.aligner-item--top {
+	  align-self: flex-start;
+	}
+	.aligner-item--bottom {
+	  align-self: flex-end;
+	}
+}
+

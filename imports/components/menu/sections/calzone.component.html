@@ -1,0 +1,23 @@
+<hr>
+
+<a id="calzone"></a>
+
+<div class="calzones pt-1">
+  <p class="lead text-xs-center"><em>Calzones</em></p>
+  <h5 class="mb-1 text-xs-center">Sizes: Half &amp; Whole</h5>
+
+  <table class="table menu-calzones">
+    <tbody>
+      <tr>
+        <th scope="row" class="no-bt text-sm-right text-capitalize">{{ $ctrl.calzone.whole.name }}</th>
+        <td class="no-bt text-sm-left">{{ $ctrl.calzone.whole.price | currency }}</td>
+        <th class="no-bt text-sm-right hidden-xs-down text-capitalize">{{ $ctrl.calzone.half.name }}</th>
+        <td class="no-bt hidden-xs-down">{{ $ctrl.calzone.half.price | currency }}</td>
+      </tr>
+      <tr class="hidden-sm-up">
+        <th scope="row" class="text-sm-left text-capitalize">{{ $ctrl.calzone.half.name }}</th>
+        <td class=" text-sm-left">{{ $ctrl.calzone.half.price | currency }}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>

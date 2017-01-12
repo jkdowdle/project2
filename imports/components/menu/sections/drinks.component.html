@@ -1,0 +1,37 @@
+<hr>
+
+<a id="soda"></a>
+
+<div class="drinks py-1">
+  <p class="lead text-xs-center"><em>Drinks</em></p>
+  <h5 class="text-xs-center mb-1">Coke Products</h5>
+
+  <div class="row flex-items-xs-middle">
+    <div class="col-md">
+      <p class="text-xs-center text-capitalize">{{ $ctrl.sizes.tl.name + 's' }}</p>
+
+      <lm-menu-list list-data="$ctrl.soda"></lm-menu-list>
+    </div>
+    <div class="col-md">
+      <br class="hidden-sm-up">
+
+      <table class="table menu-drinks">
+        <tbody>
+          <tr>
+            <th scope="row" class="text-md-center no-bt text-capitalize">{{ $ctrl.sizes.md.name }}</th>
+            <td class="text-xs-center no-bt">{{ $ctrl.sizes.md.price | currency }}</td>
+          </tr>
+          <tr>
+            <th scope="row" class="text-md-center text-capitalize">{{ $ctrl.sizes.lg.name }}</th>
+            <td class="text-xs-center">{{ $ctrl.sizes.lg.price | currency }}</td>
+          </tr>
+          <tr>
+            <th scope="row" class="text-md-center text-capitalize">{{ $ctrl.sizes.tl.name }}</th>
+            <td class="text-xs-center">{{ $ctrl.sizes.tl.price | currency }}</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+</div>

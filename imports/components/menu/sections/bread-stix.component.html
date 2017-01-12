@@ -1,0 +1,39 @@
+<hr>
+
+<a id="stix"></a>
+
+<div class="bread-sticks py-1">
+  <p class="lead text-xs-center"><em>Bread Sticks</em></p>
+
+  <p class="text-xs-center">Dipping Sauces - $0.35 each</p>
+
+  <ul class="menu-list">
+    <lm-menu-list list-data="$ctrl.stix.sauces"></lm-menu-list>
+  </ul>
+
+  <table class="table menu-bread-sticks">
+    <tbody>
+      <tr>
+        <th scope="row" class="no-bt text-sm-right">{{ $ctrl.stix.types.reg.name }}</th>
+        <td class="no-bt text-sm-left">{{ $ctrl.stix.types.reg.price | currency }}</td>
+        <th class="no-bt text-sm-right hidden-xs-down">{{ $ctrl.stix.types.cin.name }}</th>
+        <td class="no-bt hidden-xs-down">{{ $ctrl.stix.types.cin.price | currency }}</td>
+      </tr>
+      <tr class="hidden-sm-up">
+        <th scope="row" class="text-sm-left">{{ $ctrl.stix.types.cin.name }}</th>
+        <td class=" text-sm-left">{{ $ctrl.stix.types.cin.price | currency }}</td>
+      </tr>
+      <tr>
+        <th scope="row" class="text-sm-right">{{ $ctrl.stix.types.che.name }}</th>
+        <td class=" text-sm-left">{{ $ctrl.stix.types.che.price | currency }}</td>
+        <th class="text-sm-right hidden-xs-down">{{ $ctrl.stix.types.pep.name }}</th>
+        <td class=" hidden-xs-down">{{ $ctrl.stix.types.pep.price | currency }}</td>
+      </tr>
+      <tr class="hidden-sm-up">
+        <th scope="row" class="text-sm-left">{{ $ctrl.stix.types.pep.name }}</th>
+        <td class="text-sm-left">{{ $ctrl.stix.types.pep.price | currency }}</td>
+      </tr>
+    </tbody>
+  </table>
+
+</div>

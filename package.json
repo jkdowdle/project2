@@ -9,9 +9,8 @@
     "angular-meteor": "^1.3.11",
     "angular-ui-router": "^0.3.2",
     "babel-runtime": "^6.18.0",
+    "bootstrap": "^4.0.0-alpha.6",
     "meteor-node-stubs": "~0.2.0"
   },
-  "devDependencies": {
-    
-  }
+  "devDependencies": {}
 }

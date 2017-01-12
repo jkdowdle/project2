@@ -1,0 +1,74 @@
+<hr>
+
+<a id="pizza"></a>
+
+<div class="sizes py-1">
+  <p class="lead text-xs-center"><em>Pizza Sizes</em></p>
+
+  <table class="table menu-pizzas hidden-xs-down">
+    <thead>
+      <tr>
+        <th></th>
+        <th>Cheese</th>
+        <th>1 Item</th>
+        <th>2 Item</th>
+        <th>3 Item</th>
+        <th>Combo</th>
+        <th>Specialty</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <th scope="row">8" Personal</th>
+        <td ng-repeat="price in $ctrl.sizes.sm">
+          {{ price | currency }}
+        </td>
+      </tr>
+      <tr>
+        <th scope="row">12" Medium</th>
+        <td ng-repeat="price in $ctrl.sizes.md">
+          {{ price | currency }}
+        </td>
+      </tr>
+      <tr>
+        <th scope="row">14" Large</th>
+        <td ng-repeat="price in $ctrl.sizes.lg">
+          {{ price | currency }}
+        </td>
+      </tr>
+      <tr>
+        <th scope="row">16" X-Large</th>
+        <td ng-repeat="price in $ctrl.sizes.xlg">
+          {{ price | currency }}
+        </td>
+      </tr>
+    </tbody>
+  </table>
+
+  <table class="table menu-pizzas hidden-sm-up">
+    <thead>
+      <tr>
+        <th class="text-xs-center">Size</th>
+        <th class="text-xs-center">Range</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <th scope="row" class="text-xs-center">8"</th>
+        <td class="text-xs-center">{{ $ctrl.sizes.sm[0] | currency}} - {{ $ctrl.sizes.sm[5] | currency}}</td>
+      </tr>
+      <tr>
+        <th scope="row" class="text-xs-center">12"</th>
+        <td class="text-xs-center">{{ $ctrl.sizes.md[0] | currency}} - {{ $ctrl.sizes.md[5] | currency}}</td>
+      </tr>
+      <tr>
+        <th scope="row" class="text-xs-center">14"</th>
+        <td class="text-xs-center">{{ $ctrl.sizes.lg[0] | currency}} - {{ $ctrl.sizes.lg[5] | currency}}</td>
+      </tr>
+      <tr>
+        <th scope="row" class="text-xs-center">16"</th>
+        <td class="text-xs-center">{{ $ctrl.sizes.xlg[0] | currency}} - {{ $ctrl.sizes.xlg[5] | currency}}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
