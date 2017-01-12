@@ -10,11 +10,20 @@ class LocationsCtrl {
     $scope.viewModel(this);
 
     this.helpers({
-      getSchedule() {
-        console.log(Schedule.find({}));
-        return Schedule.find({});
+      richfieldHours() {
+        
+        return Schedule.find({location: 'richfield'}, { sort: { section: 1 } });
+      },
+      salinaHours() {
+        
+        return Schedule.find({location: 'salina'});
       }
     });
+  }
+  
+  formatDay(start, end) {
+    console.log(start, end);
+    return `${start} - ${end}`;
   }
 
 }

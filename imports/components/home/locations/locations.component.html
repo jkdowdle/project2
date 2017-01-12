@@ -1,4 +1,44 @@
-<section class="locations py-3 my-1">
+<p ng-repeat="section in $ctrl.richfieldHours">
+  {{ section.dayEnd = null ? section.dayStart + ':' : section.dayStart + ' - ' + section.dayEnd + ':'}}
+</p>
+ 
+
+ <table>
+  <tbody ng-repeat="section in $ctrl.richfieldHours">
+    <tr>
+      <th scope="row" class="text-capitalized">
+        {{ $ctrl.formatDay(section.startDay, section.endDay) }}
+      </th>
+      <td class="text-xs-right">
+        {{  }}
+      </td>
+    </tr>
+  </tbody>
+    <!--
+  <tbody>
+   <tr>
+      <th scope="row">Monday - Thursday:</th>
+      <td class="text-xs-right">11:30 AM - 9:00 PM</td>
+    </tr> 
+   <tr>
+-->
+</table>
+
+<div>
+
+  <pre>
+    {{ $ctrl.richfieldHours | json }}
+  </pre>
+  
+  <input type="time" ng-model="$ctrl.time">
+  
+  {{ ++$ctrl.time }}
+  
+        
+
+</div>
+
+ <section class="locations py-3 my-1">
   <a id="locations"></a>
   <div class="container py-3 px-1">
     <div class="row flex-items-xs-middle">
@@ -88,7 +128,7 @@
         <table>
           <tbody>
             <tr>
-              <th scope="row">Monday -  Thursday:</th>
+              <th scope="row">Monday - Thursday:</th>
               <td class="text-xs-right">11:30 AM - 9:00 PM</td>
             </tr>
             <tr>
